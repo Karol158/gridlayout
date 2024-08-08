@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        body{
+            display: grid;
+            height: 100vh;
+            /*grid-template-columns: 200px 10em 100%;*/
+            margin:0;
+            /*grid-template-columns:  2fr 3fr;
+            grid-template-rows:2f 5fr;*/
+            grid-template-areas:  "h h h h h h h h h h "
+                                  "n m m m m m m m m a "
+                                  "n m m m m m m m m a "
+                                  "n m m m m m m m m a "
+                                  "n m m m m m m m m a "
+                                  "f f f f f f f f f f " ;
+             
+        }
+        header{
+            background-color: blueviolet;
+            grid-area: h;
+
+        }
+        nav{
+            background-color: blue;
+            grid-area: n;
+        }
+        main{
+          background-color: orange;
+          grid-area: m;
+        }
+        aside{
+          background-color: green;
+          grid-area: a;
+        }
+        footer{
+            background-color: yellow;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <NAV></NAV>
+    <main></main>
+    <aside></aside>
+    <footer></footer> 
+   
+   
+</body>
+</html>
